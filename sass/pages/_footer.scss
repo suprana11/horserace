@@ -1,6 +1,7 @@
 #footer-page {
-    margin-top: 185px;
+    margin-top: 22px;
     background-color: #3675be;
+    width: 100%;
     .first-footer-block {
         display: flex;
        // justify-content: center;
@@ -42,17 +43,81 @@
         ul {
             display: flex;
             justify-content: center;
+            align-items: center;
             list-style-type: none;
             gap: 26px;
             li a {
                 text-decoration: none;
                 color: white;
             }
+            img {
+                height: 63px;
+            }
         }
     }
     .footer-caution {
-        text-align: center;
+       // text-align: center;
         color: white;
         padding: 16px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    img {
+        height: 58px;
     }
+    }
+
+    @media(max-width:770px) {
+        .footer-wrapper {
+            display: none;
+           // width: 102.3%;
+        }
+        .footer-sm {
+            .first-block {
+                display: flex;
+                flex-direction: column;
+                padding-top: 31px;
+                padding-left: 39px;
+                padding-right: 54px;
+                color: white;
+            }
+            .second-block {
+                display: flex;
+                flex-direction: column;
+                padding-top: 31px;
+                padding-left: 39px;
+                padding-right: 54px;
+                color: white;
+            }
+            .last-block {
+                display: flex;
+                gap:29px;
+                padding-left: 39px;
+                padding-top: 18px;
+                padding-bottom: 76px;
+
+            }
+        }
+    }
+    // @media(max-width:500px) {
+    //     .first-footer-block {
+    //         display: flex;
+    //         flex-direction: column;
+    //         .image-block {
+    //             margin-left: 51px;
+    //         }
+    //     }
+    //     .second-footer-block {
+    //         ul {
+    //             gap: 14px;
+    //         }
+    //     }
+    // }
+    // .footer-sm {
+    //    background-color: #3675be;
+    //    p,h3 {
+    //     color: white;
+    //    }
+    // }
 }

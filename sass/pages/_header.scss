@@ -1,38 +1,106 @@
 #page-header {
+    //width: 100%;
+    .header-sm {
+        // display: flex;
+       // justify-content: space-around;
+        // position: absolute;
+        // width: 100%;
+        // height: 69px;
+        // left: 0px;
+        // top: 0px;
+        // text-align: center;
+        // background: #3575BE;
+        // padding-top: 20px;
+        position: absolute;
+    height: 69px;
+    text-align: center;
+    background: #3575BE;
+    padding-top: 20px;
+    width: 100%;
    // display: flex;
-   justify-content: space-around;
-   position: absolute;
-   width: 100%;
-   height: 69px;
-   left: 0px;
-   top: 0px;
-   text-align: center;
-   background: #3575BE;
-    nav {
-        display:flex;
-        justify-content: space-around;
-    padding-top: 25px;
-    #flags {
-        background-color: black;
-        height: 34px;
-        padding-top: -1px;
-        margin-top: -8px;
-        border-radius: 5px;
+        img {
+            position: absolute;
+        left: 8px;
+        }
+    
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 2px;
+            margin-left: 233px;
+    
+            #flags {
+                background-color: black;
+                height: 34px;
+                padding-top: -1px;
+                margin-top: -8px;
+                border-radius: 5px;
+    
+                a {
+                    color: white;
+    
+                }
+            }
+    
+        }
+    
         a {
-            color: white;
-           
+            text-decoration: none;
+            color: black;
+        }
+    
+        .header-second-block {
+    
+            height: 55px;
+            background-color: #D0D2D3;
+            margin-top: 17px
         }
     }
-
-    }
-    a {
-        text-decoration: none;
-        color:black;
-    }
-    .header-second-block {
-       
-    height: 55px;
-    background-color: #D0D2D3;
-    margin-top: 17px
-    }
+        .menu-container {
+            width: 102%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 60px;
+        }
+    
+        // .sm-menu{
+        //     display: none;
+        // }
+    
+        @media (min-width: 780px){
+            .hide-above-sm {
+                display: none !important;
+            }
+        }
+    
+        @media (max-width:770px) {
+             .header-sm{
+                background:white;
+                padding-top: 39px;
+              // width: 102.3%;
+            }
+            .header-sm .header-second-block {
+                margin-top: 22px;
+                background-color:#273D83;
+            }
+                img {
+                    left: 24px;
+                    top: 21px;
+                  
+                }
+            
+            nav {
+                a,
+                button {
+                    display: none;
+                }
+            }
+          .menu-bar {
+            position:absolute;
+            right: 29px;
+            top: 21px;
+          }  
+        }
+      
 }
