@@ -44,11 +44,12 @@
 }
 
 #page-header .menu-container {
-	width: 102%;
-	position: absolute;
-	display: flex;
 	flex-direction: column;
-	top: 60px;
+	position: absolute;
+	background-color: yellow;
+	display: flex;
+	display: none;
+	width: 80%;
 }
 
 @media (min-width: 780px) {
@@ -267,63 +268,78 @@
 	width: 529px;
 }
 
-#homepage .home-left-block #tabs #tabs-2-table {
-	padding: 0;
-}
-
-#homepage .home-left-block #tabs #tabs-2-table #table-3 table {
-	border-collapse: collapse;
-}
-
-#homepage .home-left-block #tabs #tabs-2-table #table-3 table tr th {
+#homepage .home-left-block #tabs #tabs-2-table .back-to .back-to-heading {
 	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(41, 171, 226, 0.2) 100%), #2A3F74;
 	text-align: left;
 	color: white;
 	font-size: 18px;
-	font-weight: 700;
-	padding-left: 21px;
-	padding-top: 12px;
-	height: 59px;
+	font-weight: 500;
+	height: 69px;
+	display: flex;
+	align-items: center;
+	gap: 11px;
 }
 
-#homepage .home-left-block #tabs #tabs-2-table #table-3 table tr th img {
-	margin-right: 9px;
+#homepage .home-left-block #tabs #tabs-2-table .back-to .back-to-heading img {
+	height: 25px;
+	height: 16px;
+	margin-left: 17px;
 }
 
-#homepage .home-left-block #tabs #tabs-2-table #table-3 table tr td {
-	padding-left: 65px;
-	padding-right: 21px;
-	height: 70px;
+#homepage .home-left-block #tabs #tabs-2-table .back-to .back-to-content {
+	display: flex;
+	justify-content: space-around;
 }
 
-#homepage .home-left-block #tabs #tabs-2-table table {
-	border-collapse: collapse;
+#homepage .home-left-block #tabs #tabs-2-table .back-to .back-to-content .first-content {
+	display: flex;
+	gap: 147px;
 }
 
-#homepage .home-left-block #tabs #tabs-2-table table tr th {
+#homepage .home-left-block #tabs #tabs-2-table .table-heading {
 	background: #0D76BD;
 	text-align: left;
 	color: white;
 	font-size: 18px;
-	font-weight: 700;
-	padding-left: 21px;
-	padding-top: 12px;
+	font-weight: 500;
+	padding-left: 33px;
+	padding-top: 10px;
+	padding-bottom: 12px;
 }
 
-#homepage .home-left-block #tabs #tabs-2-table table tr th pre {
+#homepage .home-left-block #tabs #tabs-2-table .table-heading p {
+	margin: 0;
+}
+
+#homepage .home-left-block #tabs #tabs-2-table .table-heading pre {
 	font-family: 'Roboto';
 	font-size: 16px;
 	font-weight: 100;
+	padding-top: 14px;
+	margin: 0;
 }
 
-#homepage .home-left-block #tabs #tabs-2-table table tr td {
-	padding-left: 65px;
-	padding-right: 21px;
-	height: 70px;
-}
-
-#homepage .home-left-block #tabs #tabs-2-table table tr:nth-child(odd) {
+#homepage .home-left-block #tabs #tabs-2-table .result-table-content .result-outer-table:nth-child(odd) {
 	background-color: #e8f4fc;
+}
+
+#homepage .home-left-block #tabs #tabs-2-table .result-table-content .result-outer-table {
+	padding-left: 40px;
+	width: 100%;
+	padding-right: 18px;
+}
+
+#homepage .home-left-block #tabs #tabs-2-table .result-table-content .result-outer-table tr {
+	height: 72px;
+}
+
+#homepage .home-left-block #tabs #tabs-2-table .result-table-content .result-outer-table .result-inner-table {
+	width: 89%;
+	margin-left: 101px;
+}
+
+#homepage .home-left-block #tabs #tabs-2-table .result-table-content .result-outer-table .result-inner-table tr td:nth-child(2) {
+	width: 50%;
 }
 
 #homepage .home-left-block .racing-info-block p {
@@ -665,7 +681,7 @@
 		margin: unset;
 	}
 	#homepage .home-left-block .hero-image-block {
-		margin-top: 78px;
+		margin-top: 118px;
 	}
 	#homepage .home-left-block #tabs ul {
 		justify-content: unset;
@@ -695,6 +711,24 @@
 	#homepage .home-left-block #tabs #tabs-1-table .table-1 tr td .table-2 td {
 		display: block;
 	}
+	#homepage .home-left-block #tabs #tabs-2-table .result-table-content .result-outer-table .result-inner-table {
+		margin-left: 132px;
+	}
+	#homepage .home-left-block #tabs #tabs-2-table tr td .result-inner-table td {
+		display: block;
+	}
+	#homepage .home-left-block #tabs #tabs-2-table .back-to .back-to-content {
+		justify-content: unset;
+		flex-direction: column;
+	}
+	#homepage .home-left-block #tabs #tabs-2-table .back-to .back-to-content .first-content {
+		gap: 1px;
+		flex-direction: column;
+	}
+	#homepage .home-left-block #tabs #tabs-2-table .back-to .second-content {
+		display: inline-flex;
+		justify-content: space-between;
+	}
 	#homepage .home-left-block .news-block-sm .news-content {
 		flex-wrap: unset;
 	}
@@ -715,6 +749,13 @@
 	}
 	#homepage .home-left-block #tabs #tabs-1-table .table-1 tr td .table-2 tr td:nth-child(1) {
 		width: 161px;
+	}
+	#homepage .home-left-block #tabs #tabs-2-table .result-table-content .result-outer-table .result-inner-table tr td:nth-child(2) {
+		width: unset;
+	}
+	#homepage .home-left-block #tabs #tabs-2-table .result-table-content .result-outer-table .result-inner-table {
+		width: unset;
+		margin-left: 44px;
 	}
 	#homepage .home-left-block #tabs ul li {
 		padding: 9px 3px;
@@ -742,7 +783,7 @@
 
 @media (max-width: 380px) {
 	#homepage .home-left-block .hero-image-block {
-		margin-top: 59px;
+		margin-top: 111px;
 	}
 	#homepage .home-left-block #tabs ul {
 		gap: 3px;

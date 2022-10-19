@@ -209,69 +209,157 @@
             }
 
             #tabs-2-table {
-                padding: 0;
-
-                #table-3 {
-                    table {
-                        //  width: 941px;
-                        border-collapse: collapse;
-
-                        tr th {
-                            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(41, 171, 226, 0.2) 100%), #2A3F74;
-                            text-align: left;
-                            color: white;
-                            font-size: 18px;
-                            font-weight: 500;
-                            padding-left: 21px;
-                            padding-top: 12px;
-                            height: 59px;
-
-                            img {
-                                margin-right: 9px;
-                            }
-                        }
-
-                        tr td {
-                            padding-left: 65px;
-                            padding-right: 21px;
-                            height: 70px;
-                        }
-                    }
-
-                }
-
-                table {
-                    width: -webkit-fill-available;
-                    border-collapse: collapse;
-
-                    tr th {
-                        background: #0D76BD;
+                .back-to {
+                    .back-to-heading {
+                        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(41, 171, 226, 0.2) 100%), #2A3F74;
                         text-align: left;
                         color: white;
                         font-size: 18px;
                         font-weight: 500;
-                        padding-left: 21px;
-                        padding-top: 12px;
+                        height: 69px;
+                        display: flex;
+                        align-items: center;
+                        gap: 11px;
 
-                        pre {
-                            font-family: 'Roboto';
-                            font-size: 16px;
-                            font-weight: 100;
+                        img {
+                            height: 25px;
+                            height: 16px;
+                            margin-left: 17px;
                         }
                     }
 
-                    tr td {
-                        padding-left: 65px;
-                        padding-right: 21px;
-                        height: 70px;
+                    .back-to-content {
+                        display: flex;
+                        justify-content: space-around;
+
+                        .first-content {
+                            display: flex;
+                            gap: 147px;
+                        }
+                    }
+                }
+
+                .table-heading {
+                    background: #0D76BD;
+                    text-align: left;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding-left: 33px;
+                    padding-top: 10px;
+                    padding-bottom: 12px;
+
+                    p {
+                        margin: 0;
                     }
 
-                    tr:nth-child(odd) {
+                    pre {
+                        font-family: 'Roboto';
+                        font-size: 16px;
+                        font-weight: 100;
+                        padding-top: 14px;
+                        margin: 0;
+                    }
+                }
+
+                .result-table-content {
+                    .result-outer-table:nth-child(odd) {
                         background-color: #e8f4fc;
                     }
 
+                    .result-outer-table {
+                        //margin-left: 62px;
+                        padding-left: 40px;
+                        width: 100%;
+                        padding-right: 18px;
+
+                        // tr  td b:nth-child(1){
+                        //    padding-left: 40px;
+                        // }
+                        tr {
+                            height: 72px;
+
+                        }
+
+                        .result-inner-table {
+                            width: 89%;
+                            margin-left: 101px;
+
+                            tr td:nth-child(2) {
+                                width: 50%;
+                            }
+                        }
+                    }
                 }
+
+
             }
+
+
+            // #tabs-2-table {
+            //     padding: 0;
+
+            //     #table-3 {
+            //         table {
+            //             //  width: 941px;
+            //             border-collapse: collapse;
+
+            //             tr th {
+            // background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(41, 171, 226, 0.2) 100%), #2A3F74;
+            // text-align: left;
+            // color: white;
+            // font-size: 18px;
+            // font-weight: 500;
+            // padding-left: 21px;
+            // padding-top: 12px;
+            // height: 59px;
+
+            //                 img {
+            //                     margin-right: 9px;
+            //                 }
+            //             }
+
+            //             tr td {
+            //                 padding-left: 65px;
+            //                 padding-right: 21px;
+            //                 height: 70px;
+            //             }
+            //         }
+
+            //     }
+
+            //     table {
+            //         width: -webkit-fill-available;
+            //         border-collapse: collapse;
+
+            //         tr th {
+            // background: #0D76BD;
+            // text-align: left;
+            // color: white;
+            // font-size: 18px;
+            // font-weight: 500;
+            //             padding-left: 21px;
+            //             padding-top: 12px;
+
+            //             pre {
+            //                 font-family: 'Roboto';
+            //                 font-size: 16px;
+            //                 font-weight: 100;
+            //             }
+            //         }
+
+            //         tr td {
+            //             padding-left: 65px;
+            //             padding-right: 21px;
+            //             height: 70px;
+            //         }
+
+            //         tr:nth-child(odd) {
+            //             background-color: #e8f4fc;
+            //         }
+
+            //     }
+            // }
         }
 
         .racing-info-block {
@@ -422,6 +510,7 @@
                         gap: 9px;
                         margin-top: 3px;
                         margin-left: 7px;
+
                         p {
                             margin: 0;
                         }
@@ -663,7 +752,7 @@
             margin: unset;
 
             .hero-image-block {
-                margin-top: 78px;
+                margin-top: 118px;
             }
 
             #tabs {
@@ -708,6 +797,40 @@
                     }
                 }
 
+                #tabs-2-table {
+                    .result-table-content .result-outer-table .result-inner-table {
+                        margin-left: 132px;
+                    }
+                    tr td {
+                        .result-inner-table {
+
+
+                            td {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .back-to {
+                        .back-to-content {
+                            justify-content: unset;
+                            flex-direction: column;
+                        
+
+                        .first-content {
+                            gap: 1px;
+                            flex-direction: column;
+                        }
+                    }
+
+                        .second-content {
+                            display: inline-flex;
+                            justify-content: space-between;
+                        }
+                    }
+
+                }
+
             }
 
 
@@ -747,6 +870,13 @@
                         }
                     }
                 }
+                #tabs-2-table .result-table-content .result-outer-table .result-inner-table tr td:nth-child(2)  {
+                    width: unset;
+                }
+                #tabs-2-table .result-table-content .result-outer-table .result-inner-table {
+                     width: unset;
+                     margin-left: 44px;
+                }
             }
 
             #tabs ul li {
@@ -782,7 +912,7 @@
     @media(max-width:380px) {
         .home-left-block {
             .hero-image-block {
-                margin-top: 59px;
+                margin-top: 111px;
             }
 
             #tabs ul {
@@ -821,244 +951,3 @@
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// @media(min-width:1290px) {
-//     .home-left-block {
-//         width: 1018px;
-//         .hero-image-block {
-//             width: 1018px;
-//         }
-//         #tabs {
-//             width: 1018px;
-//             #tabs-1-table {
-//                 .table1-header {
-//                     width: 997px;
-//                 }
-//                 .table-1 {
-//                     width: 1018px;
-//                 }
-//             }
-
-//         }
-//         .racing-info-block {
-//             width: 1018px;
-//         }
-//         .forum-thread-block {
-//             width: 1018px;
-//         }
-//         .category-block {
-//             width: 1018px;
-//         }
-//         .jockey-table {
-//             table {
-//                 width: 1018px;
-//             }
-//         }
-//     }
-//     #footer-page {
-//         margin-top: 370px;
-//     }
-// }
-
-
-
-// .racing-info-block {
-//     width: 750px;
-// }
-// .forum-thread-block {
-//     width: 758px;
-// }
-// .category-block {
-//     width: 758px;
-
-// }
-// .jockey-table {
-//     width: 758px;
-// }
-// .news-block-sm {
-//    width:758px;
-// }
-
-
-//mobile 
-
-//     @media (max-width:500px) {
-//         .home-left-block {
-//             width: 425px;
-//            margin-left: unset;
-
-//             .hero-image-block {
-//                 width: 425px;
-//                 margin-top: 59px;
-
-//                 .hero-text {
-//                     background: linear-gradient(0deg, rgba(39, 61, 131, 0.9), rgba(39, 61, 131, 0.9)), #606060;
-//                     bottom: 44px;
-//                     left: 58px;
-//                     opacity: 0.8;
-//                     border-radius: 6px 0 6px 0;
-
-//                 }
-//             }
-
-//             #tabs-1-table table {
-//                 width: 424px;
-//             }
-
-//             #tabs-2-table table {
-//                 width: 424px;
-//             }
-//         }
-
-//         // .news-block {
-//         //     top: 0;
-//         // }
-//     }
-
-// @media(max-width:400px) {
-//  .home-left-block {
-//     width: 375px;
-//     .hero-image-block {
-//         width: 375px;
-//         .hero-text {
-//             p{
-//                 margin-left: 18.93px;
-//                 margin-right: unset;
-//             }
-//             h2 {
-//                 margin-left: 18.93px;
-//                 margin-right: unset;
-//             }
-//         }
-//     }
-//     #tabs {
-//         width: 375px;
-//         ul {
-//             padding: unset;
-//             justify-content: unset;
-//             gap: 2px;
-//             li {
-//                 padding: 8px 15px;
-//                 a {
-//                     padding: unset;
-//                 }
-//             }
-//         }
-//         #tabs-1-table{
-//             width: 375px;
-//             .table1-header {
-//                 width: 375px;
-//             }
-//             .table-1 {
-//                 width: 375px;
-//                td {
-//                    display: block;
-//                }
-//         }
-//          }
-//          #tabs-2-table{
-//             table {
-
-//                 width: 375px;
-//         }
-//          }
-//     }
-//     .racing-info-block{
-//         width: 375px;
-//     }
-//     .forum-thread-block {
-//         width: 375px;
-//     }
-//     .category-block {
-//         width: 375px;
-//     }
-//     .jockey-table {
-//         width: 375px;
-//         table {
-//             width: 375px;
-//         }
-//     }
-
-//  }
-// }
-
-
-
-
-
-//     @media (max-width: 770px) {
-//         #homepage .home-ad-block .ad-blocks {
-//             display: none;
-//         }
-//         .home-ad-block .offer-block {
-//             position: unset;
-//         }
-
-//         .home-left-block {
-//             width: 764px;
-
-
-//             .hero-image-block {
-//                 width: 760px;
-//             }
-
-//             #tabs-1-table table {
-//                 width: 761px;
-//             }
-
-//             #tabs-2-table table {
-//                 width: 761px;
-//             }
-//         }
-
-//     }
-// //mobile 
-
-//     @media (max-width:500px) {
-//         .home-left-block {
-//             width: 425px;
-
-//             .hero-image-block {
-//                 width: 425px;
-//                 margin-top: 78px;
-
-//                 .hero-text {
-//                     background: linear-gradient(0deg, rgba(39, 61, 131, 0.9), rgba(39, 61, 131, 0.9)), #606060;
-//                     bottom: 44px;
-//                     left: 58px;
-//                     opacity: 0.8;
-//                     border-radius: 6px 0 6px 0;
-
-//                 }
-//             }
-
-//             #tabs-1-table table {
-//                 width: 424px;
-//             }
-
-//             #tabs-2-table table {
-//                 width: 424px;
-//             }
-//         }
-
-//         .news-block {
-//             top: 0;
-//         }
-//     }
-
-// @media(max-width:400px) {
-
-// }

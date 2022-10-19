@@ -27,8 +27,7 @@
         </div>
         <i class="fa fa-bars menu-bar hide-above-sm" style="font-size:24px"></i>
 </div>
-    </header>
-    <div class="menu-container hide-above-sm">
+<div class="menu-container hide-above-sm">
         <a href="#">Horse Racing</a>
             <a href="#">Football</a>
             <a href="#">Free Bets</a>
@@ -38,6 +37,8 @@
             <a href="#">Forum</a>
             <a href="#">Help</a>
             <a href="#">Login</a>
-            <button id="flags"><a href="#">Country Flags</a></button>
+            <!-- <button id="flags"><a href="#">Country Flags</a></button> -->
         </div>
+    </header>
+    
 </body>

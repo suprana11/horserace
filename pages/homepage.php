@@ -109,8 +109,81 @@
                 </div>
                 </table>
                 </div>
-                
+
                 <div id="tabs-2-table">
+                    <div class="back-to">
+                        <div class="back-to-heading">
+                        <img id="back-arrow" src="../img/Vector.svg">
+                                   <p> Back to Racecards</p>
+                        </div>
+                        <div class="back-to-content">
+                            <div class="first-content">
+                               <p><b>Sky Bet Supreme Novices’ Hurdle<br>(Grade 1) (GBB Race)</b></p>
+                               <p>2m 87y (Class 1, 4YO plus)</p>
+                            </div>
+                            <div class="second-content">
+                                <p>10 Runners</p>
+                                <p>Winner: £52,735</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-heading">
+                            <p>Weighed in</p>
+                            <p>Winning Time: 3m 56.32s</p>                                      Off Time: 13:20:54</pre>
+                        </div>
+                        <div class="result-table-content">
+                    <table class="result-outer-table">
+                        <tr><td><b>1st<br>(1)</b></td>
+            
+                            <td>
+                                <table class="result-inner-table">
+                                <td><img src="/horserace/img/yellowJersey.svg">&nbsp;&nbsp;<b>Chimed</b></td>
+                                <td style="color:#666666">J Neil Callan<br>T Brett Johnson</td>
+                                </table>
+                            </td>
+                        
+                        <td><b> 1/6</b><br>SP</td></tr>
+                    </table>
+                    <table class="result-outer-table">
+                        <tr><td><b>1st<br>(1)</b></td>
+            
+                            <td>
+                                <table class="result-inner-table">
+                                <td><img src="/horserace/img/blueJersey.svg">&nbsp;&nbsp;<b>Constitution</b></td>
+                                <td style="color:#666666">J Neil Callan<br>T Brett Johnson</td>
+                                </table>
+                            </td>
+                        
+                        <td><b> 1/6</b><br>SP</td></tr>
+                    </table>
+                    <table class="result-outer-table">
+                        <tr><td><b>1st<br>(1)</b></td>
+            
+                            <td>
+                                <table class="result-inner-table">
+                                <td><img src="/horserace/img/jockey.svg">&nbsp;&nbsp;<b>Al Agaila</b></td>
+                                <td style="color:#666666">J Neil Callan<br>T Brett Johnson</td>
+                                </table>
+                            </td>
+                        
+                        <td><b> 1/6</b><br>SP</td></tr>
+                    </table>
+                    <table class="result-outer-table">
+                        <tr><td><b>1st<br>(1)</b></td>
+            
+                            <td>
+                                <table class="result-inner-table">
+                                <td><img src="/horserace/img/jockey.svg">&nbsp;&nbsp;<b>Al Agaila</b></td>
+                                <td style="color:#666666">J Neil Callan<br>T Brett Johnson</td>
+                                </table>
+                            </td>
+                        
+                        <td><b> 1/6</b><br>SP</td></tr>
+                    </table>
+                        </div>
+                </div>
+                
+                <!-- <div id="tabs-2-table">
                     <div id="table-3">
                         <table>
                         <tr>
@@ -172,7 +245,7 @@
                         </tr>
 
                     </table>
-                </div>
+                </div> -->
             </div>
 
 
